@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画属性</title>
+</head>
+<style>
+    body {
+        width: 1500px;
+        height: 1024px;
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+
+    #banner {
+        width: 1024px;
+        border: 1px solid blue;
+        height: 768px;
+        overflow: hidden;
+    }
+
+    #box {
+        border: 5px solid #000;
+        height: 768px;
+        width: 3072px;
+        animation: dh 20s infinite 2s;
+    }
+
+    #box>img {
+        float: left;
+    }
+
+    @keyframes dh {
+        25% {
+            margin-left: -1024px;
+        }
+
+        50% {
+            margin-left: -2048px;
+        }
+
+
+        75% {
+            margin-left: -1024px;
+        }
+
+        100% {
+            margin-left: 0px;
+        }
+
+
+    }
+
+    #box1 {
+        margin: 25px 25px;
+        /*border: 1px solid black;*/
+        float: left;
+    }
+
+
+
+
+    #box1>div {
+        padding: 10px 20px;
+        color: #fff;
+        font-weight: bold;
+        float: left;
+    }
+
+    #box1>div:nth-child(1) {
+        background: rgb(224, 59, 9);
+        border-radius: 10px 0px 0px 0px;
+    }
+
+    #box1>div:nth-child(2) {
+        background: rgb(25, 173, 50);
+    }
+
+    #box1>div:nth-child(3) {
+        background: rgb(20, 23, 202);
+    }
+
+    #box1>div:nth-child(4) {
+        background: rgb(132, 13, 136);
+        border-radius: 0px 10px 0px 0px;
+    }
+
+
+    #box1>div>div {
+        position: absolute;
+        width: 248px;
+        /* border: 1px solid red;*/
+        margin: 0px 25px;
+        top: 66px;
+        left: 0px;
+        padding: 20px;
+        text-align: center;
+        display: none;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    #box1>div:first-child>div {
+        background: linear-gradient(58deg, rgb(224, 59, 9) 0, rgb(224, 59, 9) 100%);
+        display: block;
+
+    }
+
+    #box1>div:nth-child(2)>div {
+        background: linear-gradient(58deg, rgb(25, 173, 50) 0, rgb(25, 173, 50) 100%);
+    }
+
+    #box1>div:nth-child(3)>div {
+        background: linear-gradient(58deg, rgb(20, 23, 202) 0, rgb(20, 23, 202) 100%);
+    }
+
+    #box1>div:nth-child(4)>div {
+        background: linear-gradient(58deg, rgb(132, 13, 136) 0, rgb(132, 13, 136) 100%);
+
+    }
+
+    #box1>div:hover>div {
+        display: block;
+    }
+
+    #box1>div>div>span {
+        font-size: 20px;
+        margin-right: 20px;
+    }
+
+    #box1>div>div>a>button {
+        border: 1px solid #ccc;
+        background: #fff;
+        padding: 2px 10px;
+
+    }
+</style>
+
+<body>
+
+
+    <div id="box1">
+        <div>
+            期限
+            <div>
+                <span>512</span>
+                <a href=""><button>立即购买</button></a>
+            </div>
+        </div>
+        <div>永久
+            <div>
+                <span>512</span>
+                <a href=""><button>立即购买</button></a>
+            </div>
+        </div>
+        <div>组合
+            <div>
+                <span>512</span>
+                <a href=""><button>立即购买</button></a>
+            </div>
+        </div>
+        <div>会员
+            <div>
+                <span>512</span>
+                <a href=""><button>立即购买</button></a>
+            </div>
+        </div>
+
+    </div>
+    <div id="banner">
+        <div id="box">
+
+            <img src="image/22.jpg" alter="">
+            <img src="image/33.jpg" alter="">
+            <img src="image/44.jpg" alter="">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
